@@ -3,7 +3,7 @@ html{
     font-size: 16px;
 }
 
-header{
+.logo{
     background-color: gainsboro;
     color: black;
     height: 5%;
