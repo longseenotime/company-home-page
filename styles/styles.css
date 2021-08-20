@@ -61,20 +61,20 @@ main{
     position: relative;
     top: 70px;
     display: grid;
-    grid-template: repeat(4, 1fr)/repeat(12, 1fr);
+    grid-template: repeat(3, 2fr) 1fr/repeat(12, 1fr);
     height: calc(100% - 70px);
     width: 100%;
 }
 
 .mr-websites{
     grid-area: 1 / 1 / span 1 / span 12;
-    position: relative;
+    position: relative; 
 }
 
 .mr-websites p{
     text-align: center;
     font-size: 2rem;
-    color: white;
+    color: rgb(240, 230, 221);
 }
 
 .mr-websites .bgd-img{
@@ -88,25 +88,55 @@ main{
 .built{
     grid-area: 2 / 1 / span 2 / span 12;
     text-align: center;
+    color: blanchedalmond;
+    background-color: rgb(39, 38, 36);
+}
+
+.footer-img{
+    grid-area: 4 / 1 / span 1 / span 12;
+    position: relative;
+    color: blanchedalmond;
+} 
+
+.footer-img img{
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.footer-img .overlay:before{
+    content: " ";
+    z-index: 1;
+    position: absolute;   
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .skills{
     grid-area: 4 / 1 / span 1 / span 6;
     justify-content: space-evenly;
     text-align: center;
+    color: blanchedalmond;
+    z-index: 2;
 }
 
 .contact{
     grid-area: 4 / 7 / span 1 / span 6;
     justify-content: space-evenly;
     text-align: center;
+    color: blanchedalmond;
+    z-index: 2;
 }
     
 svg{
-    stroke-width: 2;
+    stroke-width: 3;
     stroke-linecap: round;
-    fill: rgba(red, green, blue, 0);
+    fill: rgba(red, green, blue, 1);
     height: 1.25rem;
     width: 1.25rem;
     object-fit: contain;
+    z-index: 2;
 }
